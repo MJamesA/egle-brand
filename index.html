@@ -10,44 +10,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root{
-  --red:#cc191d;
-  --red-d:#a01015;
-  --ink:#16181b;
-  --steel:#8a8d91;
-  --silver:#c7c9cc;
-  --silver-l:#e9eaec;
-  --slate:#6c7178;
-  --offwhite:#f4f4f5;
+  --red:#e60000;
+  --red-d:#bd0000;
+  --ink:#25282b;
+  --steel:#4a4d4e;
+  --silver:#bebebe;
+  --silver-l:#e6e6e6;
+  --slate:#7e7e7e;
+  --offwhite:#f2f2f2;
   --paper:#ffffff;
-  --line:#e8e8ea;
-  --accent:#cc191d;
-  --accent-2:#a01015;
+  --line:#e6e6e6;
+  --accent:#e60000;
+  --accent-2:#bd0000;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);min-height:100vh;
+body{font-family:'Inter',Arial,sans-serif;background:#eeeeee;color:var(--ink);min-height:100vh;
   background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d6d5d2' fill-opacity='0.30'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ── HEADER ── */
-.portal-header{background:linear-gradient(135deg,#141518 0%,#20130f 50%,#141518 100%);position:relative;overflow:hidden;}
-.portal-header::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 82% 50%,rgba(204,25,29,0.16) 0%,transparent 60%);pointer-events:none;}
-.portal-header-bar{height:5px;background:linear-gradient(90deg,var(--red-d),var(--red),#e8474a);}
+.portal-header{background:linear-gradient(135deg,#1c1e20 0%,#2a0a0a 50%,#1c1e20 100%);position:relative;overflow:hidden;}
+.portal-header::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 82% 50%,rgba(230,0,0,0.16) 0%,transparent 60%);pointer-events:none;}
+.portal-header-bar{height:5px;background:linear-gradient(90deg,var(--red-d),var(--red),#ff4d4d);}
 .portal-header-inner{padding:20px 48px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1;gap:24px;flex-wrap:wrap;}
 .portal-brand{display:flex;align-items:center;gap:14px;}
 .portal-brand img{height:44px;width:44px;border-radius:8px;display:block;}
 .portal-title{text-align:right;}
-.portal-title-label{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#8a8d91;font-weight:500;margin-bottom:4px;}
+.portal-title-label{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#4a4d4e;font-weight:500;margin-bottom:4px;}
 .portal-title-name{font-family:'Oswald',sans-serif;font-size:24px;font-weight:600;color:#fff;letter-spacing:0.02em;text-transform:uppercase;}
 .portal-title-name span{color:var(--red);}
 
 /* ── TOP NAV ── */
-.top-nav{background:linear-gradient(180deg,#141518,#0f1012);padding:0 48px;display:flex;gap:0;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:100;box-shadow:0 4px 16px rgba(0,0,0,0.15);overflow-x:auto;}
+.top-nav{background:linear-gradient(180deg,#1c1e20,#141618);padding:0 48px;display:flex;gap:0;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:100;box-shadow:0 4px 16px rgba(0,0,0,0.15);overflow-x:auto;}
 .top-nav-btn{padding:15px 24px;font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;border:none;background:transparent;color:#7d8188;cursor:pointer;transition:all 0.25s ease;border-bottom:3px solid transparent;margin-bottom:-3px;white-space:nowrap;}
-.top-nav-btn:hover{color:#e0e0e2;background:rgba(204,25,29,0.08);}
+.top-nav-btn:hover{color:#e0e0e2;background:rgba(230,0,0,0.08);}
 .top-nav-btn.active{color:#fff;border-bottom-color:var(--red);}
 
 /* ── BREADCRUMB ── */
-.breadcrumb-bar{background:#1a1c1f;padding:9px 48px;font-size:11px;color:#7d8188;letter-spacing:0.04em;display:flex;align-items:center;gap:8px;}
+.breadcrumb-bar{background:#202325;padding:9px 48px;font-size:11px;color:#7d8188;letter-spacing:0.04em;display:flex;align-items:center;gap:8px;}
 .breadcrumb-bar .bc-sep{color:#40444a;margin:0 2px;}
 .breadcrumb-bar .bc-current{color:var(--red);font-weight:600;}
 
@@ -64,23 +64,23 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 .ba-card{border-radius:14px;padding:30px 26px 22px;display:flex;flex-direction:column;align-items:center;gap:18px;min-height:210px;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,0.04),0 6px 20px rgba(0,0,0,0.06);transition:transform 0.3s ease,box-shadow 0.3s ease;position:relative;}
 .ba-card:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,0.08),0 16px 40px rgba(0,0,0,0.1);}
 .ba-card-light{background:var(--paper);border:1px solid var(--line);}
-.ba-card-dark{background:var(--ink);border:1px solid #2c2f34;}
+.ba-card-dark{background:var(--ink);border:1px solid #3a3d40;}
 .ba-card-red{background:var(--red);border:1px solid var(--red-d);}
 .ba-card-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;text-align:center;margin-top:auto;color:var(--ink);}
 .ba-card-dark .ba-card-label,.ba-card-red .ba-card-label{color:rgba(255,255,255,0.72);}
 .ba-card-actions{display:flex;gap:6px;margin-top:2px;flex-wrap:wrap;justify-content:center;}
-.emblem-img{width:150px;height:150px;border-radius:12px;box-shadow:0 6px 20px rgba(204,25,29,0.25);}
+.emblem-img{width:150px;height:150px;border-radius:12px;box-shadow:0 6px 20px rgba(230,0,0,0.25);}
 
 /* ── BUTTONS ── */
 .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:7px;font-family:'Oswald',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.06em;cursor:pointer;border:none;transition:all 0.2s ease;text-transform:uppercase;box-shadow:0 1px 3px rgba(0,0,0,0.1);}
 .btn svg{width:12px;height:12px;fill:currentColor;flex-shrink:0;}
 .btn-dl{background:var(--red);color:#fff;}
-.btn-dl:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 4px 12px rgba(204,25,29,0.32);}
+.btn-dl:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 4px 12px rgba(230,0,0,0.32);}
 .btn-dl:active{transform:translateY(0);}
 .btn-ghost{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2);box-shadow:none;}
 .btn-ghost:hover{background:rgba(255,255,255,0.18);transform:translateY(-2px);}
 .btn-ink{background:var(--ink);color:#fff;}
-.btn-ink:hover{background:#2c2f34;transform:translateY(-2px);}
+.btn-ink:hover{background:#3a3d40;transform:translateY(-2px);}
 .btn:disabled{opacity:0.55;cursor:wait;transform:none!important;}
 
 /* ── LOCKUP ROWS ── */
@@ -125,27 +125,27 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 .dd-card{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
 .dd-preview{height:96px;display:flex;align-items:center;justify-content:center;background:var(--offwhite);position:relative;overflow:hidden;}
 .dd-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;font-size:11px;font-weight:600;}
-.dd-bar.do{background:#fce9ea;color:var(--red-d);}
+.dd-bar.do{background:#fde5e5;color:var(--red-d);}
 .dd-bar.dont{background:#f0f0f1;color:#5a5f66;}
 .dd-ico{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;flex-shrink:0;}
 .dd-ico.do{background:var(--red);}
 .dd-ico.dont{background:#5a5f66;}
 
 /* ── DOWNLOADS STRIP ── */
-.dl-strip{background:linear-gradient(135deg,#141518,#25140f);border-radius:16px;padding:34px 36px;margin:24px auto 0;max-width:1240px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden;}
-.dl-strip::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 30%,rgba(204,25,29,0.22),transparent 60%);pointer-events:none;}
+.dl-strip{background:linear-gradient(135deg,#1c1e20,#320c0c);border-radius:16px;padding:34px 36px;margin:24px auto 0;max-width:1240px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden;}
+.dl-strip::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 30%,rgba(230,0,0,0.22),transparent 60%);pointer-events:none;}
 .dl-strip-text h3{font-family:'Oswald',sans-serif;color:#fff;font-size:22px;font-weight:600;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:6px;}
 .dl-strip-text p{color:#9a9ea4;font-size:12.5px;line-height:1.6;max-width:480px;}
 .dl-strip-actions{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1;}
 
 /* ── FOOTER ── */
-.portal-footer{background:linear-gradient(135deg,#141518,#20130f);padding:22px 48px;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--red);margin-top:48px;gap:16px;flex-wrap:wrap;}
-.portal-footer .pf-brand{font-family:'Oswald',sans-serif;font-size:11px;color:#8a8d91;letter-spacing:0.12em;text-transform:uppercase;}
+.portal-footer{background:linear-gradient(135deg,#1c1e20,#2a0a0a);padding:22px 48px;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--red);margin-top:48px;gap:16px;flex-wrap:wrap;}
+.portal-footer .pf-brand{font-family:'Oswald',sans-serif;font-size:11px;color:#4a4d4e;letter-spacing:0.12em;text-transform:uppercase;}
 .portal-footer .pf-brand span{color:var(--red);}
-.portal-footer .pf-meta{display:flex;align-items:center;gap:16px;font-size:10px;color:#8a8d91;}
+.portal-footer .pf-meta{display:flex;align-items:center;gap:16px;font-size:10px;color:#4a4d4e;}
 
 /* ── TOAST ── */
-.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:10px;font-size:12.5px;font-weight:500;letter-spacing:0.02em;box-shadow:0 8px 30px rgba(0,0,0,0.3);opacity:0;pointer-events:none;transition:all 0.3s ease;z-index:2000;display:flex;align-items:center;gap:9px;border:1px solid #2c2f34;}
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:10px;font-size:12.5px;font-weight:500;letter-spacing:0.02em;box-shadow:0 8px 30px rgba(0,0,0,0.3);opacity:0;pointer-events:none;transition:all 0.3s ease;z-index:2000;display:flex;align-items:center;gap:9px;border:1px solid #3a3d40;}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 .toast .toast-dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0;}
 
@@ -190,17 +190,17 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 .lh-sig-title{font-size:10.5px;color:var(--slate);text-transform:uppercase;letter-spacing:0.08em;font-weight:500;}
 .lh-sig-rule{height:3px;width:36px;margin-top:5px;background:var(--accent);}
 .lh-footer{background:var(--ink);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;flex-wrap:wrap;}
-.lh-footer p{font-size:8px;color:#8a8d91;line-height:1.7;letter-spacing:0.03em;}
+.lh-footer p{font-size:8px;color:#4a4d4e;line-height:1.7;letter-spacing:0.03em;}
 .lh-footer-center{display:flex;align-items:center;gap:5px;}
 .lh-footer-dot{width:4px;height:4px;border-radius:50%;background:var(--accent);}
-.lh-footer-center p{font-size:7.5px;color:#8a8d91;letter-spacing:0.1em;text-transform:uppercase;}
+.lh-footer-center p{font-size:7.5px;color:#4a4d4e;letter-spacing:0.1em;text-transform:uppercase;}
 
 .bc-pair{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;justify-content:center;}
 .bc-wrapper{display:flex;flex-direction:column;align-items:center;gap:8px;}
 .bc-label{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--slate);font-weight:500;}
 .bc-card{width:85mm;height:55mm;border-radius:6px;overflow:hidden;position:relative;box-shadow:0 4px 12px rgba(0,0,0,0.1),0 12px 36px rgba(0,0,0,0.18);}
 .bc-front{background:var(--ink);}
-.bc-front::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),#e8474a);z-index:2;}
+.bc-front::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),#ff4d4d);z-index:2;}
 .bc-front-inner{padding:8mm 7mm 7mm;height:100%;display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:1;}
 .bc-front-logo{display:flex;align-items:center;gap:8px;}
 .bc-front-logo img{height:12mm;width:12mm;border-radius:4px;}
@@ -254,7 +254,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 .inv-title-sub{font-size:9px;letter-spacing:0.1em;margin-top:6px;font-weight:500;color:var(--accent);}
 .inv-meta-row{display:flex;gap:0;padding:12px 36px 16px;border-top:1px solid rgba(255,255,255,0.06);flex-wrap:wrap;}
 .inv-meta-item{flex:1;min-width:90px;}
-.inv-meta-label{font-size:8px;color:#8a8d91;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;margin-bottom:2px;}
+.inv-meta-label{font-size:8px;color:#4a4d4e;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;margin-bottom:2px;}
 .inv-meta-value{font-size:12px;color:#fff;font-weight:500;}
 .inv-body{padding:26px 36px 20px;}
 .inv-parties{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:22px;}
@@ -264,22 +264,22 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 .inv-party-label{display:inline-block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-left:3px solid var(--accent);color:var(--accent);margin-bottom:8px;}
 .inv-table-actions{margin-bottom:12px;display:flex;align-items:center;gap:12px;}
 .btn-row{padding:7px 16px;border-radius:6px;font-family:'Oswald',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;border:none;transition:all 0.2s ease;}
-.btn-row-add{background:#fbe4e5;color:var(--accent);}
+.btn-row-add{background:#fde5e5;color:var(--accent);}
 .btn-row-add:hover{filter:brightness(0.97);transform:translateY(-1px);}
-.inv-table{width:100%;border-collapse:separate;border-spacing:0;font-size:11px;border-radius:6px;overflow:hidden;border:1px solid #e8e8ea;}
+.inv-table{width:100%;border-collapse:separate;border-spacing:0;font-size:11px;border-radius:6px;overflow:hidden;border:1px solid #e6e6e6;}
 .inv-table th{padding:10px 12px;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#fff;text-align:left;background:var(--accent);}
 .inv-table td{padding:10px 12px;border-bottom:1px solid #f0f0f1;color:#3f3c39;vertical-align:middle;}
 .inv-table tbody tr:nth-child(even){background:#faf9f9;}
-.inv-table tbody tr:hover{background:#fdeff0;}
+.inv-table tbody tr:hover{background:#fdefef;}
 .td-center{text-align:center;}
 .td-num{text-align:right;font-variant-numeric:tabular-nums;}
-.inv-table td[contenteditable]{background:rgba(204,25,29,0.04);border-bottom:1px dashed #dcdcde;outline:none;}
-.inv-table td[contenteditable]:hover{background:rgba(204,25,29,0.09);}
-.inv-table td[contenteditable]:focus{background:rgba(204,25,29,0.13);border-bottom:1px solid var(--accent);}
-.row-del{text-align:center;color:#a01015;cursor:pointer;font-size:16px;font-weight:700;width:28px;opacity:0.35;transition:all 0.2s ease;border-radius:4px;}
-.row-del:hover{opacity:1;background:rgba(160,16,21,0.08);}
+.inv-table td[contenteditable]{background:rgba(230,0,0,0.04);border-bottom:1px dashed #dcdcde;outline:none;}
+.inv-table td[contenteditable]:hover{background:rgba(230,0,0,0.09);}
+.inv-table td[contenteditable]:focus{background:rgba(230,0,0,0.13);border-bottom:1px solid var(--accent);}
+.row-del{text-align:center;color:#bd0000;cursor:pointer;font-size:16px;font-weight:700;width:28px;opacity:0.35;transition:all 0.2s ease;border-radius:4px;}
+.row-del:hover{opacity:1;background:rgba(189,0,0,0.08);}
 .inv-totals{display:flex;justify-content:flex-end;margin:22px 0;}
-.inv-totals-box{min-width:280px;background:var(--offwhite);border-radius:8px;padding:16px 20px;border:1px solid #e8e8ea;}
+.inv-totals-box{min-width:280px;background:var(--offwhite);border-radius:8px;padding:16px 20px;border:1px solid #e6e6e6;}
 .inv-totals-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font-size:12px;color:#3f3c39;}
 .inv-totals-row.subtotal{padding-bottom:12px;border-bottom:1px solid #e0e0e2;}
 .inv-totals-row.vat{font-size:11px;color:var(--slate);}
@@ -302,7 +302,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 .inv-sig-name{font-size:14px;font-weight:700;color:var(--ink);}
 .inv-sig-title{font-size:10px;color:var(--slate);letter-spacing:0.04em;margin-top:2px;}
 .inv-footer{background:var(--ink);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
-.inv-footer p{font-size:8px;color:#8a8d91;line-height:1.7;margin:0;}
+.inv-footer p{font-size:8px;color:#4a4d4e;line-height:1.7;margin:0;}
 .inv-footer-dot{width:4px;height:4px;border-radius:50%;background:var(--accent);}
 
 /* ── PRINT ── */
@@ -317,7 +317,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar{width:9px;height:9px;}
-::-webkit-scrollbar-track{background:#ecebe9;}
+::-webkit-scrollbar-track{background:#eeeeee;}
 ::-webkit-scrollbar-thumb{background:#c7c7c4;border-radius:5px;}
 ::-webkit-scrollbar-thumb:hover{background:var(--slate);}
 
@@ -345,7 +345,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
       <img src="assets/egle-motors-logo-300.jpg" alt="Egle Motors emblem">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 44" width="180" height="26" role="img" aria-label="Egle Motors">
         <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ffffff">EGLE </text>
-        <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#cc191d">MOTORS</text>
+        <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#e60000">MOTORS</text>
       </svg>
     </div>
     <div class="portal-title">
@@ -391,9 +391,9 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     <!-- Wordmark light -->
     <div class="ba-card ba-card-light" id="logo-wordmark">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="240" height="53">
-        <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#16181b">EGLE </text>
-        <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#cc191d">MOTORS</text>
-        <rect x="3" y="50" width="230" height="4" rx="2" fill="#cc191d"/>
+        <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#25282b">EGLE </text>
+        <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e60000">MOTORS</text>
+        <rect x="3" y="50" width="230" height="4" rx="2" fill="#e60000"/>
       </svg>
       <div class="ba-card-label">Wordmark — Light Background</div>
       <div class="ba-card-actions">
@@ -406,8 +406,8 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     <div class="ba-card ba-card-dark" id="logo-reversed">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="240" height="53">
         <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#ffffff">EGLE </text>
-        <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e8474a">MOTORS</text>
-        <rect x="3" y="50" width="230" height="4" rx="2" fill="#cc191d"/>
+        <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#ff4d4d">MOTORS</text>
+        <rect x="3" y="50" width="230" height="4" rx="2" fill="#e60000"/>
       </svg>
       <div class="ba-card-label">Wordmark — Dark Background</div>
       <div class="ba-card-actions">
@@ -433,11 +433,11 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     <div class="ba-sub-row" id="lockup-sales">
       <div class="ba-sub-logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 56" width="300" height="32">
-          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#16181b">EGLE </text>
-          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#cc191d">MOTORS</text>
-          <rect x="248" y="10" width="2" height="34" rx="1" fill="#cc191d"/>
-          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#16181b">SALES</text>
-          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#6c7178">NEW &amp; USED VEHICLES</text>
+          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#25282b">EGLE </text>
+          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#e60000">MOTORS</text>
+          <rect x="248" y="10" width="2" height="34" rx="1" fill="#e60000"/>
+          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#25282b">SALES</text>
+          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#7e7e7e">NEW &amp; USED VEHICLES</text>
         </svg>
       </div>
       <div class="ba-sub-info"><div class="ba-sub-div">Sales</div><div class="ba-sub-desc">New &amp; used vehicle sales</div></div>
@@ -451,11 +451,11 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     <div class="ba-sub-row" id="lockup-service">
       <div class="ba-sub-logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 56" width="300" height="32">
-          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#16181b">EGLE </text>
-          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#cc191d">MOTORS</text>
-          <rect x="248" y="10" width="2" height="34" rx="1" fill="#cc191d"/>
-          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#16181b">SERVICE</text>
-          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#6c7178">SERVICING &amp; REPAIRS</text>
+          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#25282b">EGLE </text>
+          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#e60000">MOTORS</text>
+          <rect x="248" y="10" width="2" height="34" rx="1" fill="#e60000"/>
+          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#25282b">SERVICE</text>
+          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#7e7e7e">SERVICING &amp; REPAIRS</text>
         </svg>
       </div>
       <div class="ba-sub-info"><div class="ba-sub-div">Service</div><div class="ba-sub-desc">Servicing, diagnostics &amp; repairs</div></div>
@@ -469,11 +469,11 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     <div class="ba-sub-row" id="lockup-parts">
       <div class="ba-sub-logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 56" width="308" height="32">
-          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#16181b">EGLE </text>
-          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#cc191d">MOTORS</text>
-          <rect x="248" y="10" width="2" height="34" rx="1" fill="#cc191d"/>
-          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#16181b">PARTS</text>
-          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#6c7178">GENUINE PARTS &amp; ACCESSORIES</text>
+          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#25282b">EGLE </text>
+          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#e60000">MOTORS</text>
+          <rect x="248" y="10" width="2" height="34" rx="1" fill="#e60000"/>
+          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#25282b">PARTS</text>
+          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#7e7e7e">GENUINE PARTS &amp; ACCESSORIES</text>
         </svg>
       </div>
       <div class="ba-sub-info"><div class="ba-sub-div">Parts</div><div class="ba-sub-desc">Genuine parts &amp; accessories</div></div>
@@ -487,11 +487,11 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     <div class="ba-sub-row" id="lockup-fleet">
       <div class="ba-sub-logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 56" width="308" height="32">
-          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#16181b">EGLE </text>
-          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#cc191d">MOTORS</text>
-          <rect x="248" y="10" width="2" height="34" rx="1" fill="#cc191d"/>
-          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#16181b">FLEET</text>
-          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#6c7178">FLEET &amp; LEASING SOLUTIONS</text>
+          <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#25282b">EGLE </text>
+          <text x="104" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="0.4" fill="#e60000">MOTORS</text>
+          <rect x="248" y="10" width="2" height="34" rx="1" fill="#e60000"/>
+          <text x="262" y="30" font-family="'Oswald',Arial,sans-serif" font-weight="500" font-size="19" letter-spacing="0.06em" fill="#25282b">FLEET</text>
+          <text x="263" y="45" font-family="'Inter',Arial,sans-serif" font-weight="500" font-size="8.5" letter-spacing="0.1em" fill="#7e7e7e">FLEET &amp; LEASING SOLUTIONS</text>
         </svg>
       </div>
       <div class="ba-sub-info"><div class="ba-sub-div">Fleet</div><div class="ba-sub-desc">Fleet &amp; leasing solutions</div></div>
@@ -513,14 +513,14 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
   <p class="ba-section-intro">Egle Red is the signature of the brand and leads every application, grounded by near-black ink and lifted with chrome silver tones drawn from the emblem. These values are sampled directly from the official logo. Click any swatch to copy its hex.</p>
 
   <div class="ba-palette" id="palette">
-    <div class="ba-swatch" onclick="copyHex('#CC191D',this)"><div class="ba-swatch-col" style="background:#cc191d;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Egle Red</div><div class="ba-swatch-role">Primary</div><div class="ba-swatch-hex">#CC191D</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#A01015',this)"><div class="ba-swatch-col" style="background:#a01015;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Deep Red</div><div class="ba-swatch-role">Shade</div><div class="ba-swatch-hex">#A01015</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#16181B',this)"><div class="ba-swatch-col" style="background:#16181b;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Ink</div><div class="ba-swatch-role">Primary Dark</div><div class="ba-swatch-hex">#16181B</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#8A8D91',this)"><div class="ba-swatch-col" style="background:#8a8d91;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Steel</div><div class="ba-swatch-role">Metallic</div><div class="ba-swatch-hex">#8A8D91</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#C7C9CC',this)"><div class="ba-swatch-col" style="background:#c7c9cc;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Chrome Silver</div><div class="ba-swatch-role">Accent</div><div class="ba-swatch-hex">#C7C9CC</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#E9EAEC',this)"><div class="ba-swatch-col" style="background:#e9eaec;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Light Silver</div><div class="ba-swatch-role">Surface</div><div class="ba-swatch-hex">#E9EAEC</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#F4F4F5',this)"><div class="ba-swatch-col" style="background:#f4f4f5;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Off-White</div><div class="ba-swatch-role">Base</div><div class="ba-swatch-hex">#F4F4F5</div></div></div>
-    <div class="ba-swatch" onclick="copyHex('#FFFFFF',this)"><div class="ba-swatch-col" style="background:#ffffff;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Paper</div><div class="ba-swatch-role">Base</div><div class="ba-swatch-hex">#FFFFFF</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#e60000',this)"><div class="ba-swatch-col" style="background:#e60000;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Egle Red</div><div class="ba-swatch-role">Primary</div><div class="ba-swatch-hex">#e60000</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#bd0000',this)"><div class="ba-swatch-col" style="background:#bd0000;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Deep Red</div><div class="ba-swatch-role">Shade</div><div class="ba-swatch-hex">#bd0000</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#25282b',this)"><div class="ba-swatch-col" style="background:#25282b;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Ink</div><div class="ba-swatch-role">Primary Dark</div><div class="ba-swatch-hex">#25282b</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#4a4d4e',this)"><div class="ba-swatch-col" style="background:#4a4d4e;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Steel</div><div class="ba-swatch-role">Metallic</div><div class="ba-swatch-hex">#4a4d4e</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#bebebe',this)"><div class="ba-swatch-col" style="background:#bebebe;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Chrome Silver</div><div class="ba-swatch-role">Accent</div><div class="ba-swatch-hex">#bebebe</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#e6e6e6',this)"><div class="ba-swatch-col" style="background:#e6e6e6;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Light Silver</div><div class="ba-swatch-role">Surface</div><div class="ba-swatch-hex">#e6e6e6</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#f2f2f2',this)"><div class="ba-swatch-col" style="background:#f2f2f2;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Off-White</div><div class="ba-swatch-role">Base</div><div class="ba-swatch-hex">#f2f2f2</div></div></div>
+    <div class="ba-swatch" onclick="copyHex('#ffffff',this)"><div class="ba-swatch-col" style="background:#ffffff;border-bottom:1px solid #ddd;"><span class="ba-swatch-copy">Copy</span></div><div class="ba-swatch-info"><div class="ba-swatch-name">Paper</div><div class="ba-swatch-role">Base</div><div class="ba-swatch-hex">#ffffff</div></div></div>
   </div>
 </section>
 
@@ -570,8 +570,8 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
       <div class="clearspace">
         <div class="cs-pad"></div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="200" height="44">
-          <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#16181b">EGLE </text>
-          <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#cc191d">MOTORS</text>
+          <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#25282b">EGLE </text>
+          <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e60000">MOTORS</text>
         </svg>
       </div>
       <p style="font-size:11.5px;color:var(--slate);line-height:1.7;margin-top:14px;">Keep clear space around the wordmark at least equal to the cap-height of the letters, free of other type, imagery and graphics.</p>
@@ -582,8 +582,8 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
       <div class="minsize">
         <div class="minsize-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="170" height="37">
-            <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#16181b">EGLE </text>
-            <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#cc191d">MOTORS</text>
+            <text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#25282b">EGLE </text>
+            <text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e60000">MOTORS</text>
           </svg>
           <span class="minsize-tag">Digital · 130px wide min</span>
         </div>
@@ -599,19 +599,19 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
   <div class="dosdonts">
     <div class="dd-card">
       <div class="dd-preview">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="150" height="33"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#16181b">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#cc191d">MOTORS</text></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="150" height="33"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#25282b">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e60000">MOTORS</text></svg>
       </div>
       <div class="dd-bar do"><span class="dd-ico do">✓</span>Use brand colours</div>
     </div>
     <div class="dd-card">
-      <div class="dd-preview" style="background:#16181b;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="150" height="33"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#ffffff">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e8474a">MOTORS</text></svg>
+      <div class="dd-preview" style="background:#25282b;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="150" height="33"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#ffffff">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#ff4d4d">MOTORS</text></svg>
       </div>
       <div class="dd-bar do"><span class="dd-ico do">✓</span>Reverse on dark</div>
     </div>
     <div class="dd-card">
       <div class="dd-preview">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="150" height="33" style="transform:rotate(-12deg);"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#16181b">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#cc191d">MOTORS</text></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="150" height="33" style="transform:rotate(-12deg);"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#25282b">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e60000">MOTORS</text></svg>
       </div>
       <div class="dd-bar dont"><span class="dd-ico dont">✕</span>Don't rotate</div>
     </div>
@@ -623,7 +623,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
     </div>
     <div class="dd-card">
       <div class="dd-preview">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="190" height="30" preserveAspectRatio="none"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#16181b">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#cc191d">MOTORS</text></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 66" width="190" height="30" preserveAspectRatio="none"><text x="2" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#25282b">EGLE </text><text x="146" y="40" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="0.5" fill="#e60000">MOTORS</text></svg>
       </div>
       <div class="dd-bar dont"><span class="dd-ico dont">✕</span>Don't stretch</div>
     </div>
@@ -656,7 +656,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
                 <img src="assets/egle-motors-logo-300.jpg" alt="Egle Motors emblem">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 44" width="150" height="22">
                   <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ffffff">EGLE </text>
-                  <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#e8474a">MOTORS</text>
+                  <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ff4d4d">MOTORS</text>
                 </svg>
               </div>
               <div class="lh-contact">
@@ -668,7 +668,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
                 <p><strong>E</strong> <span contenteditable="true">info@eglemotors.com</span></p>
               </div>
             </div>
-            <div class="lh-bar" style="background:linear-gradient(90deg,#a01015,#cc191d,#e8474a);"></div>
+            <div class="lh-bar" style="background:linear-gradient(90deg,#bd0000,#e60000,#ff4d4d);"></div>
           </div>
           <div class="lh-body">
             <div class="lh-meta">
@@ -699,10 +699,10 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
             </div>
           </div>
           <div class="lh-footer">
-            <div style="background:linear-gradient(90deg,#cc191d,#e8474a);height:3px;position:absolute;top:0;left:0;right:0;"></div>
+            <div style="background:linear-gradient(90deg,#e60000,#ff4d4d);height:3px;position:absolute;top:0;left:0;right:0;"></div>
             <div><p contenteditable="true">Egle Motors Ltd &nbsp;|&nbsp; TIN: C000000000-0 &nbsp;|&nbsp; Reg No: CS-000000-20 &nbsp;|&nbsp; VAT: V0000000</p><p contenteditable="true">Gulf Street, Off GIMPA Road, Accra &nbsp;|&nbsp; Tel: +233 30 255 0055 &nbsp;|&nbsp; info@eglemotors.com &nbsp;|&nbsp; www.eglemotors.com</p></div>
             <div class="lh-footer-center"><div class="lh-footer-dot"></div><p contenteditable="true">eglemotors.com</p></div>
-            <div><p style="color:#8a8d91;">Page 1 / 1</p></div>
+            <div><p style="color:#4a4d4e;">Page 1 / 1</p></div>
           </div>
         </div>
       </div>
@@ -726,7 +726,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
                   <img src="assets/egle-motors-logo-300.jpg" alt="emblem">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 44" width="96" height="14">
                     <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ffffff">EGLE </text>
-                    <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#e8474a">MOTORS</text>
+                    <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ff4d4d">MOTORS</text>
                   </svg>
                 </div>
                 <div>
@@ -764,8 +764,8 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
       </div>
       <div class="stage">
         <div class="env" id="env-egle">
-          <div class="env-top-bar" style="background:linear-gradient(90deg,#a01015,#cc191d,#e8474a);"></div>
-          <div class="env-left"><div style="position:absolute;bottom:0;left:0;right:0;height:7px;background:#cc191d;"></div><span class="env-strip-text">Egle Motors · eglemotors.com</span></div>
+          <div class="env-top-bar" style="background:linear-gradient(90deg,#bd0000,#e60000,#ff4d4d);"></div>
+          <div class="env-left"><div style="position:absolute;bottom:0;left:0;right:0;height:7px;background:#e60000;"></div><span class="env-strip-text">Egle Motors · eglemotors.com</span></div>
           <div class="env-stamp"><div class="env-stamp-text">Stamp<br>Here</div></div>
           <div class="env-return">
             <div class="env-return-logo">
@@ -788,7 +788,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
             <p contenteditable="true">Accra, Ghana</p>
             <div class="env-rbar"></div>
           </div>
-          <div class="env-corner" style="background:linear-gradient(90deg,#cc191d,transparent);"></div>
+          <div class="env-corner" style="background:linear-gradient(90deg,#e60000,transparent);"></div>
         </div>
       </div>
     </div>
@@ -815,13 +815,13 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
       <div class="stage">
         <div class="inv-page" id="inv-em">
           <div class="inv-header">
-            <div class="inv-header-bar" style="background:linear-gradient(90deg,#a01015,#cc191d,#e8474a);"></div>
+            <div class="inv-header-bar" style="background:linear-gradient(90deg,#bd0000,#e60000,#ff4d4d);"></div>
             <div class="inv-header-top">
               <div class="inv-header-logo">
                 <img src="assets/egle-motors-logo-300.jpg" alt="Egle Motors emblem">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 44" width="150" height="22">
                   <text x="2" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ffffff">EGLE </text>
-                  <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#e8474a">MOTORS</text>
+                  <text x="118" y="34" font-family="'Oswald',Arial,sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#ff4d4d">MOTORS</text>
                 </svg>
               </div>
               <div class="inv-header-right">
@@ -922,7 +922,7 @@ body{font-family:'Inter',Arial,sans-serif;background:#ecebe9;color:var(--ink);mi
           <div class="inv-footer">
             <p contenteditable="true">Egle Motors Ltd &nbsp;|&nbsp; TIN: C000000000-0 &nbsp;|&nbsp; VAT: V0000000 &nbsp;|&nbsp; Reg: CS-000000-20</p>
             <div style="display:flex;align-items:center;gap:5px;"><div class="inv-footer-dot"></div><p contenteditable="true">www.eglemotors.com</p></div>
-            <p style="color:#e8474a;font-weight:600;">Page 1</p>
+            <p style="color:#ff4d4d;font-weight:600;">Page 1</p>
           </div>
         </div>
       </div>
@@ -1012,8 +1012,8 @@ async function renderSVGToCanvas(elementId,scale){
   cv.width=Math.round(W*scale);cv.height=Math.round(H*scale);
   const ctx=cv.getContext('2d');
   ctx.scale(scale,scale);
-  if(/red/.test(elementId)){ctx.fillStyle='#cc191d';ctx.fillRect(0,0,W,H);}
-  else if(/reversed|dark/.test(elementId)){ctx.fillStyle='#16181b';ctx.fillRect(0,0,W,H);}
+  if(/red/.test(elementId)){ctx.fillStyle='#e60000';ctx.fillRect(0,0,W,H);}
+  else if(/reversed|dark/.test(elementId)){ctx.fillStyle='#25282b';ctx.fillRect(0,0,W,H);}
   for(const node of svg.children){
     const tag=node.tagName.toLowerCase();
     const fill=node.getAttribute('fill');
@@ -1038,7 +1038,7 @@ async function renderSVGToCanvas(elementId,scale){
       const fstyle=node.getAttribute('font-style')||'normal';
       const ff=node.getAttribute('font-family')||"'Oswald', Inter, Arial, sans-serif";
       const ls=parseFloat(node.getAttribute('letter-spacing'))||0;
-      ctx.fillStyle=fill||'#16181b';
+      ctx.fillStyle=fill||'#25282b';
       ctx.textBaseline='alphabetic';
       ctx.font=fstyle+' '+fw+' '+fs+'px '+ff;
       const txt=node.textContent;
